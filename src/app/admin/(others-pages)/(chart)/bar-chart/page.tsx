@@ -13,7 +13,7 @@ export default function page() {
     <div>
       <PageBreadcrumb pageTitle="Gráfico de barras" />
       <div className="space-y-6">
-        <ComponentCard title="Bar Chart 1">
+        <ComponentCard title="Gráfico de barras 1">
           <BarChartOne />
         </ComponentCard>
       </div>

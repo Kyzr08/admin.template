@@ -6,7 +6,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Calendario | KyzrUI",
 };
-export default function page() {
+export default function CalendarPage() {
   return (
     <div>
       <PageBreadcrumb pageTitle="Calendario" />

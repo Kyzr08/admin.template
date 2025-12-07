@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 export default function LineChart() {
   return (
     <div>
-      <PageBreadcrumb pageTitle="Line Chart" />
+      <PageBreadcrumb pageTitle="Gráfico de líneas" />
       <div className="space-y-6">
-        <ComponentCard title="Line Chart 1">
+        <ComponentCard title="Gráfico de líneas 1">
           <LineChartOne />
         </ComponentCard>
       </div>

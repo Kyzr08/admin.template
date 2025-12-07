@@ -101,7 +101,8 @@ export default function MonthlySalesChart() {
     chart: {
       fontFamily: "Outfit, sans-serif",
       type: "bar",
-      height: 180,
+      height: "100%",
+      parentHeightOffset: 0,
       animations: {
         enabled: hasAnimated,
         easing: "easeinout",
@@ -148,6 +149,12 @@ export default function MonthlySalesChart() {
       },
     },
     grid: {
+      padding: {
+        top: 0,
+        right: 12,
+        bottom: 4,
+        left: 8,
+      },
       yaxis: {
         lines: {
           show: true,
@@ -177,8 +184,8 @@ export default function MonthlySalesChart() {
   }
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white px-5 pt-5 dark:border-gray-800 dark:bg-white/[0.03] sm:px-6 sm:pt-6">
-      <div className="flex items-center justify-between">
+    <section className="flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white px-5 pb-6 pt-5 dark:border-gray-800 dark:bg-white/[0.03] sm:px-6 sm:pb-7 sm:pt-6">
+      <div className="flex items-start justify-between gap-3">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
           Ventas Mensuales
         </h3>
@@ -208,20 +215,23 @@ export default function MonthlySalesChart() {
         </div>
       </div>
 
-      <div
-        ref={containerRef}
-        onWheel={handleWheel}
-        className="max-w-full overflow-x-auto custom-scrollbar overscroll-contain"
-      >
-        <div className="-ml-5 min-w-[650px] xl:min-w-full pl-2">
-          <ReactApexChart
-            options={options}
-            series={series}
-            type="bar"
-            height={180}
-          />
+      <div className="mt-6 flex-1">
+        <div
+          ref={containerRef}
+          onWheel={handleWheel}
+          className="h-full max-w-full overflow-x-auto overflow-y-hidden custom-scrollbar overscroll-contain xl:overflow-x-visible xl:overflow-y-visible"
+        >
+          <div className="h-full min-h-[240px] min-w-[650px] pl-2 xl:min-w-full">
+            <ReactApexChart
+              options={options}
+              series={series}
+              type="bar"
+              height="100%"
+              width="100%"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

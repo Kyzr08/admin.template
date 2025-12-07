@@ -13,7 +13,7 @@ export default function BasicTables() {
     <div>
       <PageBreadcrumb pageTitle="Tablas básicas" />
       <div className="space-y-6">
-        <ComponentCard title="Basic Table 1">
+        <ComponentCard title="Tabla básica 1">
           <BasicTableOne />
         </ComponentCard>
       </div>

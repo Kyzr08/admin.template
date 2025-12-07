@@ -15,7 +15,7 @@ interface SelectProps {
 
 const Select: React.FC<SelectProps> = ({
   options,
-  placeholder = "Select an option",
+  placeholder = "Selecciona una opción",
   onChange,
   className = "",
   defaultValue = "",
@@ -40,11 +40,7 @@ const Select: React.FC<SelectProps> = ({
       onChange={handleChange}
     >
       {/* Placeholder option */}
-      <option
-        value=""
-        disabled
-        className="text-gray-700 dark:bg-gray-900 dark:text-gray-400"
-      >
+      <option value="" disabled hidden>
         {placeholder}
       </option>
       {/* Map over options */}

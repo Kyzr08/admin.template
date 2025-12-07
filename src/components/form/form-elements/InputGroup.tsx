@@ -14,13 +14,13 @@ export default function InputGroup() {
     { code: "AU", label: "+61" },
   ];
   const handlePhoneNumberChange = (phoneNumber: string) => {
-    console.log("Updated phone number:", phoneNumber);
+    console.log("Número de teléfono actualizado:", phoneNumber);
   };
   return (
-    <ComponentCard title="Input Group">
+    <ComponentCard title="Grupo de campos">
       <div className="space-y-6">
         <div>
-          <Label>Email</Label>
+          <Label>Correo electrónico</Label>
           <div className="relative">
             <Input
               placeholder="info@gmail.com"
@@ -33,7 +33,7 @@ export default function InputGroup() {
           </div>
         </div>
         <div>
-          <Label>Phone</Label>
+          <Label>Teléfono</Label>
           <PhoneInput
             selectPosition="start"
             countries={countries}
@@ -42,7 +42,7 @@ export default function InputGroup() {
           />
         </div>{" "}
         <div>
-          <Label>Phone</Label>
+          <Label>Teléfono</Label>
           <PhoneInput
             selectPosition="end"
             countries={countries}

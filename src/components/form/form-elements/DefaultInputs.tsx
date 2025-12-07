@@ -11,29 +11,29 @@ export default function DefaultInputs() {
   const [showPassword, setShowPassword] = useState(false);
   const options = [
     { value: "marketing", label: "Marketing" },
-    { value: "template", label: "Template" },
-    { value: "development", label: "Development" },
+    { value: "template", label: "Plantilla" },
+    { value: "development", label: "Desarrollo" },
   ];
   const handleSelectChange = (value: string) => {
-    console.log("Selected value:", value);
+    console.log("Valor seleccionado:", value);
   };
   return (
-    <ComponentCard title="Default Inputs">
+    <ComponentCard title="Entradas predeterminadas">
       <div className="space-y-6">
         <div>
-          <Label>Input</Label>
+          <Label>Campo</Label>
           <Input type="text" />
         </div>
         <div>
-          <Label>Input with Placeholder</Label>
-          <Input type="text" placeholder="info@gmail.com" />
+          <Label>Campo con marcador</Label>
+          <Input type="text" placeholder="correo@ejemplo.com" />
         </div>
         <div>
-          <Label>Select Input</Label>
+          <Label>Campo de selección</Label>
           <div className="relative">
             <Select
             options={options}
-            placeholder="Select an option"
+            placeholder="Selecciona una opción"
             onChange={handleSelectChange}
             className="dark:bg-dark-900"
           />
@@ -43,11 +43,11 @@ export default function DefaultInputs() {
           </div>
         </div>
         <div>
-          <Label>Password Input</Label>
+          <Label>Campo de contraseña</Label>
           <div className="relative">
             <Input
               type={showPassword ? "text" : "password"}
-              placeholder="Enter your password"
+              placeholder="Ingresa tu contraseña"
             />
             <button
               onClick={() => setShowPassword(!showPassword)}
@@ -65,8 +65,8 @@ export default function DefaultInputs() {
         <div>
           <DatePicker
             id="date-picker"
-            label="Date Picker Input"
-            placeholder="Select a date"
+            label="Campo de fecha"
+            placeholder="Selecciona una fecha"
             onChange={(dates, currentDateString) => {
               // Handle your logic
               console.log({ dates, currentDateString });
@@ -75,7 +75,7 @@ export default function DefaultInputs() {
         </div>
 
         <div>
-          <Label htmlFor="tm">Time Picker Input</Label>
+          <Label htmlFor="tm">Campo de hora</Label>
           <div className="relative">
             <Input
               type="time"
@@ -89,11 +89,11 @@ export default function DefaultInputs() {
           </div>
         </div>
         <div>
-          <Label htmlFor="tm">Input with Payment</Label>
+          <Label htmlFor="tm">Campo con método de pago</Label>
           <div className="relative">
             <Input
               type="text"
-              placeholder="Card number"
+              placeholder="Número de tarjeta"
               className="pl-[62px]"
             />
             <span className="absolute left-0 top-1/2 flex h-11 w-[46px] -translate-y-1/2 items-center justify-center border-r border-gray-200 dark:border-gray-800">

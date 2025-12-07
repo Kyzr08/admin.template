@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -17,10 +17,11 @@
     "apexcharts": "^5.3.6",
     "flatpickr": "^4.6.13",
     "next": "15.5.6",
-    "react": "19.1.0",
+    "react": "18.3.1",
     "react-apexcharts": "^1.8.0",
-    "react-dom": "19.1.0",
+    "react-dom": "18.3.1",
     "react-dropzone": "^14.3.8",
+    "react-simple-maps": "^3.0.0",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {

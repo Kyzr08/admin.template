@@ -13,67 +13,67 @@ export default function Alerts() {
     <div>
       <PageBreadcrumb pageTitle="Alertas" />
       <div className="space-y-5 sm:space-y-6">
-        <ComponentCard title="Success Alert">
+        <ComponentCard title="Alerta de éxito">
           <Alert
             variant="success"
-            title="Success Message"
-            message="Be cautious when performing this action."
+            title="Mensaje de éxito"
+            message="Ten cuidado al realizar esta acción."
             showLink={true}
             linkHref="/"
-            linkText="Learn more"
+            linkText="Más información"
           />
           <Alert
             variant="success"
-            title="Success Message"
-            message="Be cautious when performing this action."
+            title="Mensaje de éxito"
+            message="Ten cuidado al realizar esta acción."
             showLink={false}
           />
         </ComponentCard>
-        <ComponentCard title="Warning Alert">
+        <ComponentCard title="Alerta de advertencia">
           <Alert
             variant="warning"
-            title="Warning Message"
-            message="Be cautious when performing this action."
+            title="Mensaje de advertencia"
+            message="Ten cuidado al realizar esta acción."
             showLink={true}
             linkHref="/"
-            linkText="Learn more"
+            linkText="Más información"
           />
           <Alert
             variant="warning"
-            title="Warning Message"
-            message="Be cautious when performing this action."
+            title="Mensaje de advertencia"
+            message="Ten cuidado al realizar esta acción."
             showLink={false}
           />
         </ComponentCard>{" "}
-        <ComponentCard title="Error Alert">
+        <ComponentCard title="Alerta de error">
           <Alert
             variant="error"
-            title="Error Message"
-            message="Be cautious when performing this action."
+            title="Mensaje de error"
+            message="Ten cuidado al realizar esta acción."
             showLink={true}
             linkHref="/"
-            linkText="Learn more"
+            linkText="Más información"
           />
           <Alert
             variant="error"
-            title="Error Message"
-            message="Be cautious when performing this action."
+            title="Mensaje de error"
+            message="Ten cuidado al realizar esta acción."
             showLink={false}
           />
         </ComponentCard>{" "}
-        <ComponentCard title="Info Alert">
+        <ComponentCard title="Alerta informativa">
           <Alert
             variant="info"
-            title="Info Message"
-            message="Be cautious when performing this action."
+            title="Mensaje informativo"
+            message="Ten cuidado al realizar esta acción."
             showLink={true}
             linkHref="/"
-            linkText="Learn more"
+            linkText="Más información"
           />
           <Alert
             variant="info"
-            title="Info Message"
-            message="Be cautious when performing this action."
+            title="Mensaje informativo"
+            message="Ten cuidado al realizar esta acción."
             showLink={false}
           />
         </ComponentCard>

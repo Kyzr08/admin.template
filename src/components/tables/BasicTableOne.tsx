@@ -30,84 +30,84 @@ const tableData: Order[] = [
   {
     id: 1,
     user: {
-      image: "/images/user/user-17.jpg",
-      name: "Lindsey Curtis",
-      role: "Web Designer",
+      image: "/images/user/user1.jpg",
+      name: "Mariana López",
+      role: "Diseñadora web",
     },
-    projectName: "Agency Website",
+    projectName: "Sitio web de agencia",
     team: {
       images: [
-        "/images/user/user-22.jpg",
-        "/images/user/user-23.jpg",
-        "/images/user/user-24.jpg",
+        "/images/user/user2.jpg",
+        "/images/user/user3.jpg",
+        "/images/user/user4.jpg",
       ],
     },
     budget: "3.9K",
-    status: "Active",
+    status: "Activo",
   },
   {
     id: 2,
     user: {
-      image: "/images/user/user-18.jpg",
-      name: "Kaiya George",
-      role: "Project Manager",
+      image: "/images/user/user5.jpg",
+      name: "Javier Morales",
+      role: "Gestor de proyectos",
     },
-    projectName: "Technology",
+    projectName: "Tecnología",
     team: {
-      images: ["/images/user/user-25.jpg", "/images/user/user-26.jpg"],
+      images: ["/images/user/user6.jpg", "/images/user/user7.jpg"],
     },
     budget: "24.9K",
-    status: "Pending",
+    status: "Pendiente",
   },
   {
     id: 3,
     user: {
-      image: "/images/user/user-17.jpg",
-      name: "Zain Geidt",
-      role: "Content Writing",
+      image: "/images/user/user2.jpg",
+      name: "Andrés Castillo",
+      role: "Redactor de contenido",
     },
-    projectName: "Blog Writing",
+    projectName: "Redacción de blog",
     team: {
-      images: ["/images/user/user-27.jpg"],
+      images: ["/images/user/user3.jpg"],
     },
     budget: "12.7K",
-    status: "Active",
+    status: "Activo",
   },
   {
     id: 4,
     user: {
-      image: "/images/user/user-20.jpg",
-      name: "Abram Schleifer",
-      role: "Digital Marketer",
+      image: "/images/user/user4.jpg",
+      name: "Diego Hernández",
+      role: "Especialista en marketing digital",
     },
-    projectName: "Social Media",
+    projectName: "Redes sociales",
     team: {
       images: [
-        "/images/user/user-28.jpg",
-        "/images/user/user-29.jpg",
-        "/images/user/user-30.jpg",
+        "/images/user/user5.jpg",
+        "/images/user/user6.jpg",
+        "/images/user/user7.jpg",
       ],
     },
     budget: "2.8K",
-    status: "Cancel",
+    status: "Cancelado",
   },
   {
     id: 5,
     user: {
-      image: "/images/user/user-21.jpg",
-      name: "Carla George",
-      role: "Front-end Developer",
+      image: "/images/user/user7.jpg",
+      name: "Gabriela Ruiz",
+      role: "Desarrolladora front-end",
     },
-    projectName: "Website",
+    projectName: "Sitio web",
     team: {
       images: [
-        "/images/user/user-31.jpg",
-        "/images/user/user-32.jpg",
-        "/images/user/user-33.jpg",
+        "/images/user/user1.jpg",
+        "/images/user/user2.jpg",
+        "/images/user/user3.jpg",
       ],
     },
     budget: "4.5K",
-    status: "Active",
+    status: "Activo",
   },
 ];
 
@@ -124,31 +124,31 @@ export default function BasicTableOne() {
                   isHeader
                   className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
                 >
-                  User
+                  Usuario
                 </TableCell>
                 <TableCell
                   isHeader
                   className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
                 >
-                  Project Name
+                  Proyecto
                 </TableCell>
                 <TableCell
                   isHeader
                   className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
                 >
-                  Team
+                  Equipo
                 </TableCell>
                 <TableCell
                   isHeader
                   className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
                 >
-                  Status
+                  Estado
                 </TableCell>
                 <TableCell
                   isHeader
                   className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
                 >
-                  Budget
+                  Presupuesto
                 </TableCell>
               </TableRow>
             </TableHeader>
@@ -202,9 +202,9 @@ export default function BasicTableOne() {
                     <Badge
                       size="sm"
                       color={
-                        order.status === "Active"
+                        order.status === "Activo"
                           ? "success"
-                          : order.status === "Pending"
+                          : order.status === "Pendiente"
                           ? "warning"
                           : "error"
                       }

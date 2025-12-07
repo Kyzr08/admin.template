@@ -9,11 +9,12 @@ import BoltIcon from "./bolt.svg";
 import ArrowUpIcon from "./arrow-up.svg";
 import ArrowDownIcon from "./arrow-down.svg";
 import FolderIcon from "./folder.svg";
-import VideoIcon from "./videos.svg";
 import AudioIcon from "./audio.svg";
 import GridIcon from "./grid.svg";
 import FileIcon from "./file.svg";
 import DownloadIcon from "./download.svg";
+import ShoppingBagIcon from "./shopping-bag.svg";
+import OrderIcon from "./OrderIcon.svg";
 import ArrowRightIcon from "./arrow-right.svg";
 import GroupIcon from "./group.svg";
 import BoxIconLine from "./box-line.svg";
@@ -29,6 +30,7 @@ import ChevronDownIcon from "./chevron-down.svg";
 import ChevronUpIcon from "./chevron-up.svg";
 import PaperPlaneIcon from "./paper-plane.svg";
 import LockIcon from "./lock.svg";
+import LockPasswordIcon from "./lock-password.svg";
 import EnvelopeIcon from "./envelope.svg";
 import UserIcon from "./user-line.svg";
 import CalenderIcon from "./calender-line.svg";
@@ -59,7 +61,6 @@ export {
   FileIcon,
   GridIcon,
   AudioIcon,
-  VideoIcon,
   BoltIcon,
   PlusIcon,
   BoxIcon,
@@ -86,6 +87,7 @@ export {
   PaperPlaneIcon,
   EnvelopeIcon,
   LockIcon,
+  LockPasswordIcon,
   UserIcon,
   CalenderIcon,
   EyeIcon,
@@ -106,4 +108,6 @@ export {
   HorizontaLDots,
   ChevronUpIcon,
   ChatIcon,
+  ShoppingBagIcon,
+  OrderIcon,
 };

@@ -9,21 +9,21 @@ interface AvatarProps {
 }
 
 const sizeClasses = {
-  xsmall: "h-6 w-6 max-w-6",
-  small: "h-8 w-8 max-w-8",
-  medium: "h-10 w-10 max-w-10",
-  large: "h-12 w-12 max-w-12",
-  xlarge: "h-14 w-14 max-w-14",
-  xxlarge: "h-16 w-16 max-w-16",
+  xsmall: "h-6 w-6",
+  small: "h-8 w-8",
+  medium: "h-10 w-10",
+  large: "h-12 w-12",
+  xlarge: "h-14 w-14",
+  xxlarge: "h-16 w-16",
 };
 
 const statusSizeClasses = {
-  xsmall: "h-1.5 w-1.5 max-w-1.5",
-  small: "h-2 w-2 max-w-2",
-  medium: "h-2.5 w-2.5 max-w-2.5",
-  large: "h-3 w-3 max-w-3",
-  xlarge: "h-3.5 w-3.5 max-w-3.5",
-  xxlarge: "h-4 w-4 max-w-4",
+  xsmall: "h-1.5 w-1.5",
+  small: "h-2 w-2",
+  medium: "h-2.5 w-2.5",
+  large: "h-3 w-3",
+  xlarge: "h-3.5 w-3.5",
+  xxlarge: "h-4 w-4",
 };
 
 const statusColorClasses = {
@@ -39,21 +39,24 @@ const Avatar: React.FC<AvatarProps> = ({
   status = "none",
 }) => {
   return (
-    <div className={`relative  rounded-full ${sizeClasses[size]}`}>
-      {/* Avatar Image */}
-      <Image
-        width="0"
-        height="0"
-        sizes="100vw"
-        src={src}
-        alt={alt}
-        className="object-cover w-full rounded-full"
-      />
+    <div
+      className={`relative flex-none ${sizeClasses[size]} rounded-full`}
+    >
+      <div className="relative h-full w-full overflow-hidden rounded-full">
+        {/* Avatar Image */}
+        <Image
+          fill
+          sizes="100%"
+          src={src}
+          alt={alt}
+          className="object-cover"
+        />
+      </div>
 
       {/* Status Indicator */}
       {status !== "none" && (
         <span
-          className={`absolute bottom-0 right-0 rounded-full border-[1.5px] border-white dark:border-gray-900 ${
+          className={`pointer-events-none absolute bottom-0 right-0 z-20 translate-x-[18%] translate-y-[18%] flex items-center justify-center rounded-full border-2 border-white shadow-sm dark:border-gray-900 ${
             statusSizeClasses[size]
           } ${statusColorClasses[status] || ""}`}
         ></span>

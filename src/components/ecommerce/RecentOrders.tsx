@@ -23,48 +23,48 @@ interface Product {
 const tableData: Product[] = [
   {
     id: 1,
-    name: "MacBook Pro 13”",
+    name: "Free MacBook Pro 16 Mockup",
     variants: "2 variantes",
     category: "Portátil",
     price: "$2399.00",
     status: "Entregado",
-    image: "/images/product/product-01.jpg", // Replace with actual image URL
+    image: "/images/product/product-03.png", // Replace with actual image URL
   },
   {
     id: 2,
-    name: "Apple Watch Ultra",
+    name: "Apple Watch Mockup",
     variants: "1 variante",
     category: "Reloj",
     price: "$879.00",
     status: "Pendiente",
-    image: "/images/product/product-02.jpg", // Replace with actual image URL
+    image: "/images/product/product-08.png", // Replace with actual image URL
   },
   {
     id: 3,
-    name: "iPhone 15 Pro Max",
+    name: "iPhone 17 Pro Max",
     variants: "2 variantes",
     category: "Smartphone",
     price: "$1869.00",
     status: "Entregado",
-    image: "/images/product/product-03.jpg", // Replace with actual image URL
+    image: "/images/product/product-07.png", // Replace with actual image URL
   },
   {
     id: 4,
-    name: "iPad Pro 3rd Gen",
+    name: "iPad Air 5",
     variants: "2 variantes",
     category: "Electrónica",
     price: "$1699.00",
     status: "Cancelado",
-    image: "/images/product/product-04.jpg", // Replace with actual image URL
+    image: "/images/product/product-02.png", // Replace with actual image URL
   },
   {
     id: 5,
-    name: "AirPods Pro 2nd Gen",
+    name: "AirPods Pro 3",
     variants: "1 variante",
     category: "Accesorios",
     price: "$240.00",
     status: "Entregado",
-    image: "/images/product/product-05.jpg", // Replace with actual image URL
+    image: "/images/product/product-01.png", // Replace with actual image URL
   },
 ];
 

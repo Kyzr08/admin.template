@@ -16,32 +16,32 @@ export default function BadgePage() {
         <div className="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
           <div className="px-6 py-5">
             <h3 className="text-base font-medium text-gray-800 dark:text-white/90">
-              With Light Background
+              Con fondo claro
             </h3>
           </div>
           <div className="p-6 border-t border-gray-100 dark:border-gray-800 xl:p-10">
             <div className="flex flex-wrap gap-4 sm:items-center sm:justify-center">
               {/* Light Variant */}
               <Badge variant="light" color="primary">
-                Primary
+                Primario
               </Badge>
               <Badge variant="light" color="success">
-                Success
+                Éxito
               </Badge>{" "}
               <Badge variant="light" color="error">
                 Error
               </Badge>{" "}
               <Badge variant="light" color="warning">
-                Warning
+                Advertencia
               </Badge>{" "}
               <Badge variant="light" color="info">
-                Info
+                Información
               </Badge>
               <Badge variant="light" color="light">
-                Light
+                Claro
               </Badge>
               <Badge variant="light" color="dark">
-                Dark
+                Oscuro
               </Badge>
             </div>
           </div>
@@ -50,32 +50,32 @@ export default function BadgePage() {
         <div className="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
           <div className="px-6 py-5">
             <h3 className="text-base font-medium text-gray-800 dark:text-white/90">
-              With Solid Background
+              Con fondo sólido
             </h3>
           </div>
           <div className="p-6 border-t border-gray-100 dark:border-gray-800 xl:p-10">
             <div className="flex flex-wrap gap-4 sm:items-center sm:justify-center">
               {/* Light Variant */}
               <Badge variant="solid" color="primary">
-                Primary
+                Primario
               </Badge>
               <Badge variant="solid" color="success">
-                Success
+                Éxito
               </Badge>{" "}
               <Badge variant="solid" color="error">
                 Error
               </Badge>{" "}
               <Badge variant="solid" color="warning">
-                Warning
+                Advertencia
               </Badge>{" "}
               <Badge variant="solid" color="info">
-                Info
+                Información
               </Badge>
               <Badge variant="solid" color="light">
-                Light
+                Claro
               </Badge>
               <Badge variant="solid" color="dark">
-                Dark
+                Oscuro
               </Badge>
             </div>
           </div>
@@ -84,31 +84,31 @@ export default function BadgePage() {
         <div className="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
           <div className="px-6 py-5">
             <h3 className="text-base font-medium text-gray-800 dark:text-white/90">
-              Light Background with Left Icon
+              Fondo claro con ícono a la izquierda
             </h3>
           </div>
           <div className="p-6 border-t border-gray-100 dark:border-gray-800 xl:p-10">
             <div className="flex flex-wrap gap-4 sm:items-center sm:justify-center">
               <Badge variant="light" color="primary" startIcon={<PlusIcon />}>
-                Primary
+                Primario
               </Badge>
               <Badge variant="light" color="success" startIcon={<PlusIcon />}>
-                Success
+                Éxito
               </Badge>{" "}
               <Badge variant="light" color="error" startIcon={<PlusIcon />}>
                 Error
               </Badge>{" "}
               <Badge variant="light" color="warning" startIcon={<PlusIcon />}>
-                Warning
+                Advertencia
               </Badge>{" "}
               <Badge variant="light" color="info" startIcon={<PlusIcon />}>
-                Info
+                Información
               </Badge>
               <Badge variant="light" color="light" startIcon={<PlusIcon />}>
-                Light
+                Claro
               </Badge>
               <Badge variant="light" color="dark" startIcon={<PlusIcon />}>
-                Dark
+                Oscuro
               </Badge>
             </div>
           </div>
@@ -117,31 +117,31 @@ export default function BadgePage() {
         <div className="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
           <div className="px-6 py-5">
             <h3 className="text-base font-medium text-gray-800 dark:text-white/90">
-              Solid Background with Left Icon
+              Fondo sólido con ícono a la izquierda
             </h3>
           </div>
           <div className="p-6 border-t border-gray-100 dark:border-gray-800 xl:p-10">
             <div className="flex flex-wrap gap-4 sm:items-center sm:justify-center">
               <Badge variant="solid" color="primary" startIcon={<PlusIcon />}>
-                Primary
+                Primario
               </Badge>
               <Badge variant="solid" color="success" startIcon={<PlusIcon />}>
-                Success
+                Éxito
               </Badge>{" "}
               <Badge variant="solid" color="error" startIcon={<PlusIcon />}>
                 Error
               </Badge>{" "}
               <Badge variant="solid" color="warning" startIcon={<PlusIcon />}>
-                Warning
+                Advertencia
               </Badge>{" "}
               <Badge variant="solid" color="info" startIcon={<PlusIcon />}>
-                Info
+                Información
               </Badge>
               <Badge variant="solid" color="light" startIcon={<PlusIcon />}>
-                Light
+                Claro
               </Badge>
               <Badge variant="solid" color="dark" startIcon={<PlusIcon />}>
-                Dark
+                Oscuro
               </Badge>
             </div>
           </div>
@@ -150,31 +150,31 @@ export default function BadgePage() {
         <div className="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
           <div className="px-6 py-5">
             <h3 className="text-base font-medium text-gray-800 dark:text-white/90">
-              Light Background with Right Icon
+              Fondo claro con ícono a la derecha
             </h3>
           </div>
           <div className="p-6 border-t border-gray-100 dark:border-gray-800 xl:p-10">
             <div className="flex flex-wrap gap-4 sm:items-center sm:justify-center">
               <Badge variant="light" color="primary" endIcon={<PlusIcon />}>
-                Primary
+                Primario
               </Badge>
               <Badge variant="light" color="success" endIcon={<PlusIcon />}>
-                Success
+                Éxito
               </Badge>{" "}
               <Badge variant="light" color="error" endIcon={<PlusIcon />}>
                 Error
               </Badge>{" "}
               <Badge variant="light" color="warning" endIcon={<PlusIcon />}>
-                Warning
+                Advertencia
               </Badge>{" "}
               <Badge variant="light" color="info" endIcon={<PlusIcon />}>
-                Info
+                Información
               </Badge>
               <Badge variant="light" color="light" endIcon={<PlusIcon />}>
-                Light
+                Claro
               </Badge>
               <Badge variant="light" color="dark" endIcon={<PlusIcon />}>
-                Dark
+                Oscuro
               </Badge>
             </div>
           </div>
@@ -183,31 +183,31 @@ export default function BadgePage() {
         <div className="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
           <div className="px-6 py-5">
             <h3 className="text-base font-medium text-gray-800 dark:text-white/90">
-              Solid Background with Right Icon
+              Fondo sólido con ícono a la derecha
             </h3>
           </div>
           <div className="p-6 border-t border-gray-100 dark:border-gray-800 xl:p-10">
             <div className="flex flex-wrap gap-4 sm:items-center sm:justify-center">
               <Badge variant="solid" color="primary" endIcon={<PlusIcon />}>
-                Primary
+                Primario
               </Badge>
               <Badge variant="solid" color="success" endIcon={<PlusIcon />}>
-                Success
+                Éxito
               </Badge>{" "}
               <Badge variant="solid" color="error" endIcon={<PlusIcon />}>
                 Error
               </Badge>{" "}
               <Badge variant="solid" color="warning" endIcon={<PlusIcon />}>
-                Warning
+                Advertencia
               </Badge>{" "}
               <Badge variant="solid" color="info" endIcon={<PlusIcon />}>
-                Info
+                Información
               </Badge>
               <Badge variant="solid" color="light" endIcon={<PlusIcon />}>
-                Light
+                Claro
               </Badge>
               <Badge variant="solid" color="dark" endIcon={<PlusIcon />}>
-                Dark
+                Oscuro
               </Badge>
             </div>
           </div>

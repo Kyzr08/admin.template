@@ -11,13 +11,13 @@ export default function FormInModal() {
   const { isOpen, openModal, closeModal } = useModal();
   const handleSave = () => {
     // Handle save logic here
-    console.log("Saving changes...");
+    console.log("Guardando cambios...");
     closeModal();
   };
   return (
-    <ComponentCard title="Form In Modal">
+    <ComponentCard title="Formulario en modal">
       <Button size="sm" onClick={openModal}>
-        Open Modal
+        Abrir modal
       </Button>
       <Modal
         isOpen={isOpen}
@@ -26,42 +26,42 @@ export default function FormInModal() {
       >
         <form className="">
           <h4 className="mb-6 text-lg font-medium text-gray-800 dark:text-white/90">
-            Personal Information
+            Información personal
           </h4>
 
           <div className="grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2">
             <div className="col-span-1">
-              <Label>First Name</Label>
-              <Input type="text" placeholder="Emirhan" />
+              <Label>Nombre</Label>
+              <Input type="text" placeholder="Emilia" />
             </div>
 
             <div className="col-span-1">
-              <Label>Last Name</Label>
-              <Input type="text" placeholder="Boruch" />
+              <Label>Apellido</Label>
+              <Input type="text" placeholder="Castañeda" />
             </div>
 
             <div className="col-span-1">
-              <Label>Last Name</Label>
-              <Input type="email" placeholder="emirhanboruch55@gmail.com" />
+              <Label>Correo electrónico</Label>
+              <Input type="email" placeholder="emilia.castaneda55@gmail.com" />
             </div>
 
             <div className="col-span-1">
-              <Label>Phone</Label>
-              <Input type="text" placeholder="+09 363 398 46" />
+              <Label>Teléfono</Label>
+              <Input type="text" placeholder="+51 963 398 146" />
             </div>
 
             <div className="col-span-1 sm:col-span-2">
-              <Label>Bio</Label>
-              <Input type="text" placeholder="Team Manager" />
+              <Label>Biografía</Label>
+              <Input type="text" placeholder="Gerente de equipo" />
             </div>
           </div>
 
           <div className="flex items-center justify-end w-full gap-3 mt-6">
             <Button size="sm" variant="outline" onClick={closeModal}>
-              Close
+              Cerrar
             </Button>
             <Button size="sm" onClick={handleSave}>
-              Save Changes
+              Guardar cambios
             </Button>
           </div>
         </form>

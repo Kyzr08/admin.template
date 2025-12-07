@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 export default function PieChartPage() {
   return (
     <div>
-      <PageBreadcrumb pageTitle="Pie Chart" />
+      <PageBreadcrumb pageTitle="Gráfico circular" />
       <div className="space-y-6">
-        <ComponentCard title="Pie Chart 1">
+        <ComponentCard title="Gráfico circular 1">
           <PieChartOne />
         </ComponentCard>
       </div>

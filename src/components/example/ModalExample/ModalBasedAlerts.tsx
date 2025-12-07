@@ -11,31 +11,31 @@ export default function ModalBasedAlerts() {
   const warningModal = useModal();
   const errorModal = useModal();
   return (
-    <ComponentCard title="Modal Based Alerts">
+    <ComponentCard title="Alertas dentro de modales">
       <div className="flex flex-wrap items-center gap-3">
         <button
           onClick={successModal.openModal}
           className="px-4 py-3 text-sm font-medium text-white rounded-lg bg-success-500 shadow-theme-xs hover:bg-success-600"
         >
-          Success Alert
+          Alerta de éxito
         </button>
         <button
           onClick={infoModal.openModal}
           className="px-4 py-3 text-sm font-medium text-white rounded-lg bg-blue-light-500 shadow-theme-xs hover:bg-blue-light-600"
         >
-          Info Alert
+          Alerta informativa
         </button>
         <button
           onClick={warningModal.openModal}
           className="px-4 py-3 text-sm font-medium text-white rounded-lg bg-warning-500 shadow-theme-xs hover:bg-warning-600"
         >
-          Warning Alert
+          Alerta de advertencia
         </button>
         <button
           onClick={errorModal.openModal}
           className="px-4 py-3 text-sm font-medium text-white rounded-lg bg-error-500 shadow-theme-xs hover:bg-error-600"
         >
-          Danger Alert
+          Alerta de peligro
         </button>
       </div>
       {/* Success Modal */}
@@ -80,11 +80,11 @@ export default function ModalBasedAlerts() {
             </span>
           </div>
           <h4 className="mb-2 text-2xl font-semibold text-gray-800 dark:text-white/90 sm:text-title-sm">
-            Well Done!
+            ¡Bien hecho!
           </h4>
           <p className="text-sm leading-6 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur. Feugiat ipsum libero tempor
-            felis risus nisi non. Quisque eu ut tempor curabitur.
+            Has completado la acción con éxito. Puedes compartir este mensaje
+            para confirmar al usuario que todo salió según lo previsto.
           </p>
 
           <div className="flex items-center justify-center w-full gap-3 mt-7">
@@ -92,7 +92,7 @@ export default function ModalBasedAlerts() {
               type="button"
               className="flex justify-center w-full px-4 py-3 text-sm font-medium text-white rounded-lg bg-success-500 shadow-theme-xs hover:bg-success-600 sm:w-auto"
             >
-              Okay, Got It
+              Entendido
             </button>
           </div>
         </div>
@@ -140,11 +140,11 @@ export default function ModalBasedAlerts() {
           </div>
 
           <h4 className="mb-2 text-2xl font-semibold text-gray-800 dark:text-white/90 sm:text-title-sm">
-            Information Alert!
+            ¡Alerta informativa!
           </h4>
           <p className="text-sm leading-6 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur. Feugiat ipsum libero tempor
-            felis risus nisi non. Quisque eu ut tempor curabitur.
+            Proporciona datos adicionales o recordatorios importantes para que el
+            usuario pueda tomar la mejor decisión.
           </p>
 
           <div className="flex items-center justify-center w-full gap-3 mt-7">
@@ -152,7 +152,7 @@ export default function ModalBasedAlerts() {
               type="button"
               className="flex justify-center w-full px-4 py-3 text-sm font-medium text-white rounded-lg bg-blue-light-500 shadow-theme-xs hover:bg-blue-light-600 sm:w-auto"
             >
-              Okay, Got It
+              Entendido
             </button>
           </div>
         </div>
@@ -200,11 +200,11 @@ export default function ModalBasedAlerts() {
           </div>
 
           <h4 className="mb-2 text-2xl font-semibold text-gray-800 dark:text-white/90 sm:text-title-sm">
-            Warning Alert!
+            ¡Alerta de advertencia!
           </h4>
           <p className="text-sm leading-6 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur. Feugiat ipsum libero tempor
-            felis risus nisi non. Quisque eu ut tempor curabitur.
+            Informa al usuario sobre posibles riesgos o pasos que debe seguir
+            para evitar errores en el proceso.
           </p>
 
           <div className="flex items-center justify-center w-full gap-3 mt-7">
@@ -212,7 +212,7 @@ export default function ModalBasedAlerts() {
               type="button"
               className="flex justify-center w-full px-4 py-3 text-sm font-medium text-white rounded-lg bg-warning-500 shadow-theme-xs hover:bg-warning-600 sm:w-auto"
             >
-              Okay, Got It
+              Entendido
             </button>
           </div>
         </div>
@@ -260,11 +260,11 @@ export default function ModalBasedAlerts() {
           </div>
 
           <h4 className="mb-2 text-2xl font-semibold text-gray-800 dark:text-white/90 sm:text-title-sm">
-            Danger Alert!
+            ¡Alerta de peligro!
           </h4>
           <p className="text-sm leading-6 text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur. Feugiat ipsum libero tempor
-            felis risus nisi non. Quisque eu ut tempor curabitur.
+            Señala que se ha producido un problema y sugiere cómo solucionarlo o
+            a quién contactar para obtener ayuda.
           </p>
 
           <div className="flex items-center justify-center w-full gap-3 mt-7">
@@ -272,7 +272,7 @@ export default function ModalBasedAlerts() {
               type="button"
               className="flex justify-center w-full px-4 py-3 text-sm font-medium text-white rounded-lg bg-error-500 shadow-theme-xs hover:bg-error-600 sm:w-auto"
             >
-              Okay, Got It
+              Entendido
             </button>
           </div>
         </div>

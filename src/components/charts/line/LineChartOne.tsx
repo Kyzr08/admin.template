@@ -14,11 +14,6 @@ const ReactApexChart = dynamic(
 
 export default function LineChartOne() {
   const options: ApexOptions = {
-    legend: {
-      show: false, // Hide legend
-      position: "top",
-      horizontalAlign: "left",
-    },
     colors: ["#465FFF", "#9CB9FF"], // Define line colors
     chart: {
       fontFamily: "Outfit, sans-serif",
@@ -72,18 +67,18 @@ export default function LineChartOne() {
     xaxis: {
       type: "category", // Category-based x-axis
       categories: [
-        "Jan",
+        "Ene",
         "Feb",
         "Mar",
-        "Apr",
+        "Abr",
         "May",
         "Jun",
         "Jul",
-        "Aug",
+        "Ago",
         "Sep",
         "Oct",
         "Nov",
-        "Dec",
+        "Dic",
       ],
       axisBorder: {
         show: false, // Hide x-axis border
@@ -113,11 +108,11 @@ export default function LineChartOne() {
 
   const series = [
     {
-      name: "Sales",
+      name: "Ventas",
       data: [180, 190, 170, 160, 175, 165, 170, 205, 230, 210, 240, 235],
     },
     {
-      name: "Revenue",
+      name: "Ingresos",
       data: [40, 30, 50, 40, 55, 40, 70, 100, 110, 120, 150, 140],
     },
   ];

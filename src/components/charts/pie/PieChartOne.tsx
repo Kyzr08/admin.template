@@ -41,11 +41,7 @@ export default function PieChartOne() {
       labels: demographicSegments.map((segment) => segment.label),
       colors: demographicSegments.map((segment) => segment.color),
       legend: {
-        position: "bottom",
-        fontSize: "13px",
-        labels: {
-          colors: "#6B7280",
-        },
+        show: false,
       },
       stroke: {
         colors: ["#ffffff"],
@@ -61,21 +57,16 @@ export default function PieChartOne() {
             labels: {
               show: true,
               name: {
-                fontSize: "14px",
-                color: "#6B7280",
+                show: false,
               },
               value: {
-                fontSize: "24px",
+                fontSize: "26px",
                 fontWeight: 600,
                 color: "#1F2937",
                 formatter: (value) => Number(value).toLocaleString("es-ES"),
               },
               total: {
-                show: true,
-                label: "Clientes",
-                fontSize: "14px",
-                color: "#6B7280",
-                formatter: () => totalCustomers.toLocaleString("es-ES"),
+                show: false,
               },
             },
           },
@@ -105,16 +96,11 @@ export default function PieChartOne() {
   );
 
   return (
-    <div className="flex flex-col items-center gap-6">
-      <ReactApexChart
-        options={chartOptions}
-        series={chartSeries}
-        type="donut"
-        height={320}
-      />
-      <div className="text-center text-sm text-gray-500 dark:text-gray-400">
-        Actualizado semanalmente
-      </div>
-    </div>
+    <ReactApexChart
+      options={chartOptions}
+      series={chartSeries}
+      type="donut"
+      height={320}
+    />
   );
 }

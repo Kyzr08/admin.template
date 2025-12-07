@@ -8,14 +8,14 @@ export default function FileInputExample() {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
-      console.log("Selected file:", file.name);
+      console.log("Archivo seleccionado:", file.name);
     }
   };
 
   return (
-    <ComponentCard title="File Input">
+    <ComponentCard title="Carga de archivos">
       <div>
-        <Label>Upload file</Label>
+        <Label>Cargar archivo</Label>
         <FileInput onChange={handleFileChange} className="custom-class" />
       </div>
     </ComponentCard>
